@@ -37,17 +37,18 @@
             this.txtCRUD.Multiline = true;
             this.txtCRUD.Name = "txtCRUD";
             this.txtCRUD.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCRUD.Size = new System.Drawing.Size(522, 264);
+            this.txtCRUD.Size = new System.Drawing.Size(679, 264);
             this.txtCRUD.TabIndex = 1;
             // 
             // frmListarDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 289);
+            this.ClientSize = new System.Drawing.Size(711, 289);
             this.Controls.Add(this.txtCRUD);
             this.Name = "frmListarDepartamentos";
             this.Text = "Listar Departamentos";
+            this.Load += new System.EventHandler(this.frmListarDepartamentos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

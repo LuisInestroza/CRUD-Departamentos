@@ -58,6 +58,7 @@
             this.btnEliminarDepartamento.TabIndex = 4;
             this.btnEliminarDepartamento.Text = "Eliminar Departamento";
             this.btnEliminarDepartamento.UseVisualStyleBackColor = true;
+            this.btnEliminarDepartamento.Click += new System.EventHandler(this.btnEliminarDepartamento_Click);
             // 
             // btnListarDepartamentos
             // 
@@ -67,6 +68,7 @@
             this.btnListarDepartamentos.TabIndex = 1;
             this.btnListarDepartamentos.Text = "Listar Departamentos";
             this.btnListarDepartamentos.UseVisualStyleBackColor = true;
+            this.btnListarDepartamentos.Click += new System.EventHandler(this.btnListarDepartamentos_Click);
             // 
             // btnActualizar
             // 
@@ -76,6 +78,7 @@
             this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCrearDepartamento
             // 
@@ -85,6 +88,7 @@
             this.btnCrearDepartamento.TabIndex = 2;
             this.btnCrearDepartamento.Text = "Crear Departamento";
             this.btnCrearDepartamento.UseVisualStyleBackColor = true;
+            this.btnCrearDepartamento.Click += new System.EventHandler(this.btnCrearDepartamento_Click);
             // 
             // frmAplicacionCRUD
             // 
