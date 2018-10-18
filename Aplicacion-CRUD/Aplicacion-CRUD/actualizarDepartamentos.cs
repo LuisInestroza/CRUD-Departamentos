@@ -47,7 +47,7 @@ namespace Aplicacion_CRUD
                     // Ejecuatar el comando
                     cmd.ExecuteNonQuery();
 
-
+                    // Mensaje
                     lbEstado.Text = "Departamento Actualizado Correctamente";
 
 

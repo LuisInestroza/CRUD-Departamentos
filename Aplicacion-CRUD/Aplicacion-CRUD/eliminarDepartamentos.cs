@@ -46,6 +46,9 @@ namespace Aplicacion_CRUD
 
                 // Ejecutar el query
                 cmd.ExecuteNonQuery();
+
+                // Mensaje 
+                lbEstado.Text = "Departamento Eliminado Correctamente";
              
           
             }
