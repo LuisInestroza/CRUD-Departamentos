@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.gbListaDepartamentos = new System.Windows.Forms.GroupBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.lbCodigo = new System.Windows.Forms.Label();
             this.txtCRUD = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtpFechaModifiacion = new System.Windows.Forms.DateTimePicker();
+            this.txtGrupoDepartamento = new System.Windows.Forms.TextBox();
+            this.txtNombreDepartamento = new System.Windows.Forms.TextBox();
             this.lbFechaModificacion = new System.Windows.Forms.Label();
             this.lbGrupoDepartamento = new System.Windows.Forms.Label();
             this.lbNombreDepartamento = new System.Windows.Forms.Label();
@@ -42,21 +44,39 @@
             // 
             // gbListaDepartamentos
             // 
+            this.gbListaDepartamentos.Controls.Add(this.txtCodigo);
+            this.gbListaDepartamentos.Controls.Add(this.lbCodigo);
             this.gbListaDepartamentos.Controls.Add(this.txtCRUD);
             this.gbListaDepartamentos.Controls.Add(this.btnActualizar);
-            this.gbListaDepartamentos.Controls.Add(this.dateTimePicker1);
-            this.gbListaDepartamentos.Controls.Add(this.textBox2);
-            this.gbListaDepartamentos.Controls.Add(this.textBox1);
+            this.gbListaDepartamentos.Controls.Add(this.dtpFechaModifiacion);
+            this.gbListaDepartamentos.Controls.Add(this.txtGrupoDepartamento);
+            this.gbListaDepartamentos.Controls.Add(this.txtNombreDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbFechaModificacion);
             this.gbListaDepartamentos.Controls.Add(this.lbGrupoDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbNombreDepartamento);
             this.gbListaDepartamentos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListaDepartamentos.Location = new System.Drawing.Point(12, 12);
             this.gbListaDepartamentos.Name = "gbListaDepartamentos";
-            this.gbListaDepartamentos.Size = new System.Drawing.Size(583, 325);
+            this.gbListaDepartamentos.Size = new System.Drawing.Size(583, 363);
             this.gbListaDepartamentos.TabIndex = 2;
             this.gbListaDepartamentos.TabStop = false;
             this.gbListaDepartamentos.Text = "Lista de departamentos";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(170, 219);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(268, 25);
+            this.txtCodigo.TabIndex = 10;
+            // 
+            // lbCodigo
+            // 
+            this.lbCodigo.AutoSize = true;
+            this.lbCodigo.Location = new System.Drawing.Point(25, 222);
+            this.lbCodigo.Name = "lbCodigo";
+            this.lbCodigo.Size = new System.Drawing.Size(58, 17);
+            this.lbCodigo.TabIndex = 9;
+            this.lbCodigo.Text = "Codigo:";
             // 
             // txtCRUD
             // 
@@ -69,38 +89,39 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(458, 240);
+            this.btnActualizar.Location = new System.Drawing.Point(470, 274);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(95, 34);
             this.btnActualizar.TabIndex = 7;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // dateTimePicker1
+            // dtpFechaModifiacion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 280);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(268, 25);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpFechaModifiacion.Location = new System.Drawing.Point(170, 314);
+            this.dtpFechaModifiacion.Name = "dtpFechaModifiacion";
+            this.dtpFechaModifiacion.Size = new System.Drawing.Size(268, 25);
+            this.dtpFechaModifiacion.TabIndex = 1;
             // 
-            // textBox2
+            // txtGrupoDepartamento
             // 
-            this.textBox2.Location = new System.Drawing.Point(158, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 25);
-            this.textBox2.TabIndex = 6;
+            this.txtGrupoDepartamento.Location = new System.Drawing.Point(170, 283);
+            this.txtGrupoDepartamento.Name = "txtGrupoDepartamento";
+            this.txtGrupoDepartamento.Size = new System.Drawing.Size(268, 25);
+            this.txtGrupoDepartamento.TabIndex = 6;
             // 
-            // textBox1
+            // txtNombreDepartamento
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 218);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 25);
-            this.textBox1.TabIndex = 5;
+            this.txtNombreDepartamento.Location = new System.Drawing.Point(170, 252);
+            this.txtNombreDepartamento.Name = "txtNombreDepartamento";
+            this.txtNombreDepartamento.Size = new System.Drawing.Size(268, 25);
+            this.txtNombreDepartamento.TabIndex = 5;
             // 
             // lbFechaModificacion
             // 
             this.lbFechaModificacion.AutoSize = true;
-            this.lbFechaModificacion.Location = new System.Drawing.Point(13, 285);
+            this.lbFechaModificacion.Location = new System.Drawing.Point(25, 319);
             this.lbFechaModificacion.Name = "lbFechaModificacion";
             this.lbFechaModificacion.Size = new System.Drawing.Size(137, 17);
             this.lbFechaModificacion.TabIndex = 4;
@@ -109,7 +130,7 @@
             // lbGrupoDepartamento
             // 
             this.lbGrupoDepartamento.AutoSize = true;
-            this.lbGrupoDepartamento.Location = new System.Drawing.Point(13, 252);
+            this.lbGrupoDepartamento.Location = new System.Drawing.Point(25, 286);
             this.lbGrupoDepartamento.Name = "lbGrupoDepartamento";
             this.lbGrupoDepartamento.Size = new System.Drawing.Size(56, 17);
             this.lbGrupoDepartamento.TabIndex = 3;
@@ -118,7 +139,7 @@
             // lbNombreDepartamento
             // 
             this.lbNombreDepartamento.AutoSize = true;
-            this.lbNombreDepartamento.Location = new System.Drawing.Point(13, 221);
+            this.lbNombreDepartamento.Location = new System.Drawing.Point(25, 255);
             this.lbNombreDepartamento.Name = "lbNombreDepartamento";
             this.lbNombreDepartamento.Size = new System.Drawing.Size(64, 17);
             this.lbNombreDepartamento.TabIndex = 2;
@@ -128,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 350);
+            this.ClientSize = new System.Drawing.Size(613, 387);
             this.Controls.Add(this.gbListaDepartamentos);
             this.Name = "frmActualizarDepartamentos";
             this.Text = "Actualizar Departamentos";
@@ -143,11 +164,13 @@
         private System.Windows.Forms.GroupBox gbListaDepartamentos;
         private System.Windows.Forms.TextBox txtCRUD;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dtpFechaModifiacion;
+        private System.Windows.Forms.TextBox txtGrupoDepartamento;
+        private System.Windows.Forms.TextBox txtNombreDepartamento;
         private System.Windows.Forms.Label lbFechaModificacion;
         private System.Windows.Forms.Label lbGrupoDepartamento;
         private System.Windows.Forms.Label lbNombreDepartamento;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label lbCodigo;
     }
 }
