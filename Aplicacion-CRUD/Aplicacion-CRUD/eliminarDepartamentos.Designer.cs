@@ -29,66 +29,67 @@
         private void InitializeComponent()
         {
             this.gbListaDepartamentos = new System.Windows.Forms.GroupBox();
-            this.txtCRUD = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEliminarDepartamento = new System.Windows.Forms.TextBox();
             this.lbNombreDepartamento = new System.Windows.Forms.Label();
+            this.lbEliminarDepartamento = new System.Windows.Forms.ListBox();
             this.gbListaDepartamentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbListaDepartamentos
             // 
-            this.gbListaDepartamentos.Controls.Add(this.txtCRUD);
+            this.gbListaDepartamentos.Controls.Add(this.lbEliminarDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.btnEliminar);
-            this.gbListaDepartamentos.Controls.Add(this.textBox1);
+            this.gbListaDepartamentos.Controls.Add(this.txtEliminarDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbNombreDepartamento);
             this.gbListaDepartamentos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbListaDepartamentos.Location = new System.Drawing.Point(21, 24);
+            this.gbListaDepartamentos.Location = new System.Drawing.Point(12, 12);
             this.gbListaDepartamentos.Name = "gbListaDepartamentos";
-            this.gbListaDepartamentos.Size = new System.Drawing.Size(583, 274);
+            this.gbListaDepartamentos.Size = new System.Drawing.Size(523, 241);
             this.gbListaDepartamentos.TabIndex = 2;
             this.gbListaDepartamentos.TabStop = false;
             this.gbListaDepartamentos.Text = "Lista de departamentos";
             // 
-            // txtCRUD
-            // 
-            this.txtCRUD.Location = new System.Drawing.Point(9, 24);
-            this.txtCRUD.Multiline = true;
-            this.txtCRUD.Name = "txtCRUD";
-            this.txtCRUD.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCRUD.Size = new System.Drawing.Size(522, 151);
-            this.txtCRUD.TabIndex = 8;
-            // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(436, 209);
+            this.btnEliminar.Location = new System.Drawing.Point(386, 172);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(95, 34);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // textBox1
+            // txtEliminarDepartamento
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 218);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 25);
-            this.textBox1.TabIndex = 5;
+            this.txtEliminarDepartamento.Location = new System.Drawing.Point(97, 172);
+            this.txtEliminarDepartamento.Name = "txtEliminarDepartamento";
+            this.txtEliminarDepartamento.Size = new System.Drawing.Size(268, 25);
+            this.txtEliminarDepartamento.TabIndex = 5;
             // 
             // lbNombreDepartamento
             // 
             this.lbNombreDepartamento.AutoSize = true;
-            this.lbNombreDepartamento.Location = new System.Drawing.Point(38, 221);
+            this.lbNombreDepartamento.Location = new System.Drawing.Point(27, 175);
             this.lbNombreDepartamento.Name = "lbNombreDepartamento";
             this.lbNombreDepartamento.Size = new System.Drawing.Size(64, 17);
             this.lbNombreDepartamento.TabIndex = 2;
             this.lbNombreDepartamento.Text = "Nombre:";
             // 
+            // lbEliminarDepartamento
+            // 
+            this.lbEliminarDepartamento.FormattingEnabled = true;
+            this.lbEliminarDepartamento.ItemHeight = 17;
+            this.lbEliminarDepartamento.Location = new System.Drawing.Point(30, 52);
+            this.lbEliminarDepartamento.Name = "lbEliminarDepartamento";
+            this.lbEliminarDepartamento.Size = new System.Drawing.Size(381, 89);
+            this.lbEliminarDepartamento.TabIndex = 8;
+            // 
             // frmEliminarDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 317);
+            this.ClientSize = new System.Drawing.Size(548, 272);
             this.Controls.Add(this.gbListaDepartamentos);
             this.Name = "frmEliminarDepartamentos";
             this.Text = "Eliminar Departamentos";
@@ -101,9 +102,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbListaDepartamentos;
-        private System.Windows.Forms.TextBox txtCRUD;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEliminarDepartamento;
         private System.Windows.Forms.Label lbNombreDepartamento;
+        private System.Windows.Forms.ListBox lbEliminarDepartamento;
     }
 }
