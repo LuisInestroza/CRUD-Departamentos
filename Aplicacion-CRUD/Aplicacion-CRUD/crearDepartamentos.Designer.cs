@@ -37,11 +37,13 @@
             this.lbFechaModificacion = new System.Windows.Forms.Label();
             this.lbGrupoDepartamento = new System.Windows.Forms.Label();
             this.lbNombreDepartamento = new System.Windows.Forms.Label();
+            this.lbEstado = new System.Windows.Forms.Label();
             this.gbListaDepartamentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbListaDepartamentos
             // 
+            this.gbListaDepartamentos.Controls.Add(this.lbEstado);
             this.gbListaDepartamentos.Controls.Add(this.txtCRUD);
             this.gbListaDepartamentos.Controls.Add(this.btnCrear);
             this.gbListaDepartamentos.Controls.Add(this.dtpFechaModificacion);
@@ -53,7 +55,7 @@
             this.gbListaDepartamentos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListaDepartamentos.Location = new System.Drawing.Point(12, 12);
             this.gbListaDepartamentos.Name = "gbListaDepartamentos";
-            this.gbListaDepartamentos.Size = new System.Drawing.Size(583, 325);
+            this.gbListaDepartamentos.Size = new System.Drawing.Size(802, 325);
             this.gbListaDepartamentos.TabIndex = 1;
             this.gbListaDepartamentos.TabStop = false;
             this.gbListaDepartamentos.Text = "Lista de departamentos";
@@ -64,12 +66,12 @@
             this.txtCRUD.Multiline = true;
             this.txtCRUD.Name = "txtCRUD";
             this.txtCRUD.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCRUD.Size = new System.Drawing.Size(537, 162);
+            this.txtCRUD.Size = new System.Drawing.Size(767, 162);
             this.txtCRUD.TabIndex = 8;
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(458, 240);
+            this.btnCrear.Location = new System.Drawing.Point(469, 218);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(95, 34);
             this.btnCrear.TabIndex = 7;
@@ -125,14 +127,23 @@
             this.lbNombreDepartamento.TabIndex = 2;
             this.lbNombreDepartamento.Text = "Nombre:";
             // 
+            // lbEstado
+            // 
+            this.lbEstado.AutoSize = true;
+            this.lbEstado.Location = new System.Drawing.Point(444, 285);
+            this.lbEstado.Name = "lbEstado";
+            this.lbEstado.Size = new System.Drawing.Size(0, 17);
+            this.lbEstado.TabIndex = 9;
+            // 
             // frmCrearDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 353);
+            this.ClientSize = new System.Drawing.Size(827, 353);
             this.Controls.Add(this.gbListaDepartamentos);
             this.Name = "frmCrearDepartamentos";
             this.Text = "Crear Departamentos";
+            this.Load += new System.EventHandler(this.frmCrearDepartamentos_Load);
             this.gbListaDepartamentos.ResumeLayout(false);
             this.gbListaDepartamentos.PerformLayout();
             this.ResumeLayout(false);
@@ -150,5 +161,6 @@
         private System.Windows.Forms.Label lbFechaModificacion;
         private System.Windows.Forms.Label lbGrupoDepartamento;
         private System.Windows.Forms.Label lbNombreDepartamento;
+        private System.Windows.Forms.Label lbEstado;
     }
 }

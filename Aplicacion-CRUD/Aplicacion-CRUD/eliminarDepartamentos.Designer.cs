@@ -32,27 +32,27 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtEliminarDepartamento = new System.Windows.Forms.TextBox();
             this.lbNombreDepartamento = new System.Windows.Forms.Label();
-            this.lbEliminarDepartamento = new System.Windows.Forms.ListBox();
+            this.txtCRUD = new System.Windows.Forms.TextBox();
             this.gbListaDepartamentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbListaDepartamentos
             // 
-            this.gbListaDepartamentos.Controls.Add(this.lbEliminarDepartamento);
+            this.gbListaDepartamentos.Controls.Add(this.txtCRUD);
             this.gbListaDepartamentos.Controls.Add(this.btnEliminar);
             this.gbListaDepartamentos.Controls.Add(this.txtEliminarDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbNombreDepartamento);
             this.gbListaDepartamentos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListaDepartamentos.Location = new System.Drawing.Point(12, 12);
             this.gbListaDepartamentos.Name = "gbListaDepartamentos";
-            this.gbListaDepartamentos.Size = new System.Drawing.Size(523, 241);
+            this.gbListaDepartamentos.Size = new System.Drawing.Size(582, 274);
             this.gbListaDepartamentos.TabIndex = 2;
             this.gbListaDepartamentos.TabStop = false;
             this.gbListaDepartamentos.Text = "Lista de departamentos";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(386, 172);
+            this.btnEliminar.Location = new System.Drawing.Point(419, 220);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(95, 34);
             this.btnEliminar.TabIndex = 7;
@@ -62,7 +62,7 @@
             // 
             // txtEliminarDepartamento
             // 
-            this.txtEliminarDepartamento.Location = new System.Drawing.Point(97, 172);
+            this.txtEliminarDepartamento.Location = new System.Drawing.Point(130, 220);
             this.txtEliminarDepartamento.Name = "txtEliminarDepartamento";
             this.txtEliminarDepartamento.Size = new System.Drawing.Size(268, 25);
             this.txtEliminarDepartamento.TabIndex = 5;
@@ -70,29 +70,30 @@
             // lbNombreDepartamento
             // 
             this.lbNombreDepartamento.AutoSize = true;
-            this.lbNombreDepartamento.Location = new System.Drawing.Point(27, 175);
+            this.lbNombreDepartamento.Location = new System.Drawing.Point(60, 223);
             this.lbNombreDepartamento.Name = "lbNombreDepartamento";
             this.lbNombreDepartamento.Size = new System.Drawing.Size(64, 17);
             this.lbNombreDepartamento.TabIndex = 2;
             this.lbNombreDepartamento.Text = "Nombre:";
             // 
-            // lbEliminarDepartamento
+            // txtCRUD
             // 
-            this.lbEliminarDepartamento.FormattingEnabled = true;
-            this.lbEliminarDepartamento.ItemHeight = 17;
-            this.lbEliminarDepartamento.Location = new System.Drawing.Point(30, 52);
-            this.lbEliminarDepartamento.Name = "lbEliminarDepartamento";
-            this.lbEliminarDepartamento.Size = new System.Drawing.Size(381, 89);
-            this.lbEliminarDepartamento.TabIndex = 8;
+            this.txtCRUD.Location = new System.Drawing.Point(24, 36);
+            this.txtCRUD.Multiline = true;
+            this.txtCRUD.Name = "txtCRUD";
+            this.txtCRUD.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtCRUD.Size = new System.Drawing.Size(537, 162);
+            this.txtCRUD.TabIndex = 9;
             // 
             // frmEliminarDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 272);
+            this.ClientSize = new System.Drawing.Size(607, 298);
             this.Controls.Add(this.gbListaDepartamentos);
             this.Name = "frmEliminarDepartamentos";
             this.Text = "Eliminar Departamentos";
+            this.Load += new System.EventHandler(this.frmEliminarDepartamentos_Load);
             this.gbListaDepartamentos.ResumeLayout(false);
             this.gbListaDepartamentos.PerformLayout();
             this.ResumeLayout(false);
@@ -105,6 +106,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtEliminarDepartamento;
         private System.Windows.Forms.Label lbNombreDepartamento;
-        private System.Windows.Forms.ListBox lbEliminarDepartamento;
+        private System.Windows.Forms.TextBox txtCRUD;
     }
 }
