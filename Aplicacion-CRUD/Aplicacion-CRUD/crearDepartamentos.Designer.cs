@@ -31,9 +31,9 @@
             this.gbListaDepartamentos = new System.Windows.Forms.GroupBox();
             this.txtCRUD = new System.Windows.Forms.TextBox();
             this.btnCrear = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtpFechaModificacion = new System.Windows.Forms.DateTimePicker();
+            this.txtGrupoDepartamento = new System.Windows.Forms.TextBox();
+            this.txtNombreDepartamento = new System.Windows.Forms.TextBox();
             this.lbFechaModificacion = new System.Windows.Forms.Label();
             this.lbGrupoDepartamento = new System.Windows.Forms.Label();
             this.lbNombreDepartamento = new System.Windows.Forms.Label();
@@ -44,9 +44,9 @@
             // 
             this.gbListaDepartamentos.Controls.Add(this.txtCRUD);
             this.gbListaDepartamentos.Controls.Add(this.btnCrear);
-            this.gbListaDepartamentos.Controls.Add(this.dateTimePicker1);
-            this.gbListaDepartamentos.Controls.Add(this.textBox2);
-            this.gbListaDepartamentos.Controls.Add(this.textBox1);
+            this.gbListaDepartamentos.Controls.Add(this.dtpFechaModificacion);
+            this.gbListaDepartamentos.Controls.Add(this.txtGrupoDepartamento);
+            this.gbListaDepartamentos.Controls.Add(this.txtNombreDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbFechaModificacion);
             this.gbListaDepartamentos.Controls.Add(this.lbGrupoDepartamento);
             this.gbListaDepartamentos.Controls.Add(this.lbNombreDepartamento);
@@ -75,27 +75,28 @@
             this.btnCrear.TabIndex = 7;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // dateTimePicker1
+            // dtpFechaModificacion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 280);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(268, 25);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpFechaModificacion.Location = new System.Drawing.Point(158, 280);
+            this.dtpFechaModificacion.Name = "dtpFechaModificacion";
+            this.dtpFechaModificacion.Size = new System.Drawing.Size(268, 25);
+            this.dtpFechaModificacion.TabIndex = 1;
             // 
-            // textBox2
+            // txtGrupoDepartamento
             // 
-            this.textBox2.Location = new System.Drawing.Point(158, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 25);
-            this.textBox2.TabIndex = 6;
+            this.txtGrupoDepartamento.Location = new System.Drawing.Point(158, 249);
+            this.txtGrupoDepartamento.Name = "txtGrupoDepartamento";
+            this.txtGrupoDepartamento.Size = new System.Drawing.Size(268, 25);
+            this.txtGrupoDepartamento.TabIndex = 6;
             // 
-            // textBox1
+            // txtNombreDepartamento
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 218);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 25);
-            this.textBox1.TabIndex = 5;
+            this.txtNombreDepartamento.Location = new System.Drawing.Point(158, 218);
+            this.txtNombreDepartamento.Name = "txtNombreDepartamento";
+            this.txtNombreDepartamento.Size = new System.Drawing.Size(268, 25);
+            this.txtNombreDepartamento.TabIndex = 5;
             // 
             // lbFechaModificacion
             // 
@@ -143,9 +144,9 @@
         private System.Windows.Forms.GroupBox gbListaDepartamentos;
         private System.Windows.Forms.TextBox txtCRUD;
         private System.Windows.Forms.Button btnCrear;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dtpFechaModificacion;
+        private System.Windows.Forms.TextBox txtGrupoDepartamento;
+        private System.Windows.Forms.TextBox txtNombreDepartamento;
         private System.Windows.Forms.Label lbFechaModificacion;
         private System.Windows.Forms.Label lbGrupoDepartamento;
         private System.Windows.Forms.Label lbNombreDepartamento;
